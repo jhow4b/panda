@@ -1,0 +1,48 @@
+.container {
+    min-width: 100%;
+    min-height: 100vh;
+    text-align: center;
+    position: relative;
+}
+
+.container::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+
+    height: 100%;
+    width: 100%;
+
+    background-image: url("../../img/Copa_Mundial_de_Quadribol.webp");
+    background-size: cover;
+    transform: scale(1.1);
+    filter: blur(3px);
+    z-index: -1;
+}
+
+.container > span {
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.container > span:hover {
+    opacity: 1;
+    cursor: pointer;
+}
+
+.container > section {
+    width: 99vw;
+    height: 89vh;
+    margin: auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.container > section > img {
+    width: 70px;
+    cursor: pointer;
+    transition: top 1s ease, left 1s ease;
+}

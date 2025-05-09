@@ -1,0 +1,26 @@
+.personagens {
+    display: flex;
+    justify-content: center;
+}
+
+.personagens th, td {
+    padding: 10px;
+}
+
+.personagens th {
+    color: white;
+    text-decoration: underline;
+}
+
+.personagens td {
+    background-color: rgba(0, 0, 0, 0.635);
+    text-align: center;
+    border: 2px solid white;
+    color: white;
+    height: 5rem;
+    width: 4rem;
+}
+
+.personagens img {
+    height: 5rem;
+}

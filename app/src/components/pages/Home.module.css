@@ -1,0 +1,14 @@
+.container {
+    background-color: black;
+    min-height: 100vh;
+}
+
+.container > section {
+    width: 90%;
+    display: flex;
+    justify-content: center;
+}
+
+.container > section > div {
+    background-color: rgb(178, 178, 178);
+}

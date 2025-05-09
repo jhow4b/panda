@@ -1,0 +1,49 @@
+.buttonContainer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    width: 30%;
+    height: 30%;
+}
+
+.buttonContainer > span {
+    margin: 5px;
+    font-weight: 600;
+    font-size: .9em;
+    user-select: none;
+}
+
+
+.switchButton {
+    background-color: rgb(154, 154, 154);
+    width: 4rem;
+    height: 2rem;
+    border: none;
+    border-radius: 99px;
+    cursor: pointer;
+    position: relative;
+    box-shadow: -2px 1px 9px rgba(0, 0, 0, 0.648);
+    transition: .2s;
+    margin: auto;
+}
+
+.switchButton .bola {
+    height: 1.6rem;
+    width: 1.6rem;
+    background-color: white;
+    border-radius: 99px;
+    position: absolute;
+    left: 3px;
+    transform: translateX(0);
+    top: 50%;
+    transform: translateY(-50%);
+    transition: left .15s ease;
+}
+
+.switchButton.ativado {
+    background-color: black;
+}
+
+.switchButton.ativado .bola {
+    left: calc(2.2rem);
+}
