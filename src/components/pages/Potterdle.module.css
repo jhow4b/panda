@@ -1,0 +1,88 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  overflow: auto;
+  position: relative;
+}
+
+.container::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: -1;
+
+  display: block;
+  background-image: url("../../img/hogwarts_wallpaper.webp");
+  background-size: cover;
+  background-color: rgba(0, 0, 0, 0.244);
+  background-blend-mode: darken;  
+  width: 100%;
+  height: 100%;
+  transform: scale(1.1);
+  filter: blur(2px); 
+
+
+}
+
+.container > section {
+  border: 2px solid black;
+  height: 100%;
+  background-image: url("../../img/maroto.jpg");
+  background-size: cover;
+  background-position: bottom;
+  box-shadow: 0px 0px 20px 3px #000000c4;
+  color: white;
+  text-shadow: -1px 2px 9px black;
+}
+
+.container > section > h1 {
+  font-family: "Harry Potter", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  margin: 15px;
+}
+
+.container > section > h2 {
+  font-size: 1.3em;
+  padding: 10px;
+  margin: 10px;
+}
+
+.lista li {
+  background-color: rgba(110, 92, 73, 0.712);
+  padding: 10px;
+  margin: 10px;
+  list-style: none;
+  position: relative;
+}
+
+.lista li:hover {
+  background-color: rgba(69, 56, 42, 0.636);
+}
+
+.lista li a {
+  display: flex;
+  color: white;
+  align-items: center;
+  font-size: 2em;
+  font-family: "Harry Potter", sans-serif;
+  text-decoration: none;
+  text-shadow: -2px 1px 2px black;
+}
+
+.lista li a img {
+  margin: 0 1rem;
+  width: 69px;
+}
+
+.lista li a span {
+  position: absolute;
+  right: 3%;
+  bottom: 5%;
+  font-size: 0.5em;
+}
