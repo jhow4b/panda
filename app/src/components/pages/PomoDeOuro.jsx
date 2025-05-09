@@ -25,7 +25,7 @@ const PomoDeOuro = () => {
 
   const handleClick = () => {
     window.alert("Você venceu!");
-    window.location.reload();
+    setPosition({top: 0, left: 0})
   };
 
   return (
